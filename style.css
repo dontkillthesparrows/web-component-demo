@@ -1,0 +1,46 @@
+.my-table {
+  display: flex;
+  flex-flow: wrap;
+  gap: 1rem;
+}
+
+.my-table * {
+  margin: 0;
+}
+
+.element {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 50%;
+  padding: 1rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.periodic-table-element {
+  border: 1px solid black;
+  display: flex;
+}
+
+.carbon {
+  background-color: black;
+  color: white;
+}
+
+.gold {
+  background-color: gold;
+}
+
+.lithium {
+  background-color: lightgray;
+}
+
+.calcium {
+  background-color: chartreuse;
+}
