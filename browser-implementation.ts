@@ -1,3 +1,4 @@
+//create element with markup returned in string
 const myTable = document.querySelector(".my-table");
 
 const elementWithString = `
@@ -9,6 +10,7 @@ nodeWithStringElement.innerHTML = elementWithString;
 
 myTable?.appendChild(nodeWithStringElement);
 
+//create element with class initialisation
 const myClassElement = new MyElement();
 
 myClassElement.elementName = "Lithium";
@@ -19,6 +21,7 @@ nodeWithClassInit.innerHTML = myClassElement.HTML;
 
 myTable?.appendChild(nodeWithClassInit);
 
+//create element with createElement()
 const myCreatedElement = document.createElement("my-element");
 
 myCreatedElement.elementName = "Calcium";

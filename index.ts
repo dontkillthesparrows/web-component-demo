@@ -19,7 +19,6 @@ class MyElement extends HTMLElement {
 
   constructor() {
     super();
-    this.classList.add("periodic-table-slot");
   }
 
   connectedCallback() {
