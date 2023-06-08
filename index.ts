@@ -1,6 +1,10 @@
 class MyElement extends HTMLElement {
   #elementName;
 
+  constructor() {
+    super();
+  }
+
   get elementName() {
     return this.#elementName;
   }
@@ -15,10 +19,6 @@ class MyElement extends HTMLElement {
     if (this.dataset.elementName !== val) {
       this.dataset.elementName = val;
     }
-  }
-
-  constructor() {
-    super();
   }
 
   connectedCallback() {
@@ -37,10 +37,10 @@ class MyElement extends HTMLElement {
   get HTML() {
     if (this.elementName) {
       return `
-    <section class="periodic-table-element element ${this.elementName.toLowerCase()}">
-      <h2>${this.elementName}</h2>
-    </section>
-    `;
+      <section class="periodic-table-element element ${this.elementName.toLowerCase()}">
+        <h2>${this.elementName}</h2>
+      </section>
+      `;
     } else {
       return "";
     }
